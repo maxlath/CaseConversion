@@ -6,6 +6,8 @@
   { "keys": ["ctrl+k", "ctrl+d"], "command": "convert_to_dot"},
   { "keys": ["ctrl+k", "ctrl+o"], "command": "convert_to_colon"},
   { "keys": ["ctrl+k", "ctrl+h"], "command": "convert_to_dash"},
+  // k for kebab-case
+  { "keys": ["ctrl+k", "ctrl+k"], "command": "convert_to_dash"},
   { "keys": ["ctrl+k", "ctrl+w"], "command": "convert_to_separate_words"},
   // { "keys": ["ctrl+k", "ctrl+/"], "command": "convert_to_slash"},
   // { "keys": ["ctrl+k", "ctrl+b"], "command": "convert_to_back_slash"},
