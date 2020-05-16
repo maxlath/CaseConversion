@@ -42,6 +42,11 @@ def to_dot_case(text, detectAcronyms, acronyms):
     return '.'.join([w.lower() for w in words])
 
 
+def to_colon_case(text, detectAcronyms, acronyms):
+    words, case, sep = case_parse.parseVariable(text, detectAcronyms, acronyms)
+    return ':'.join([w.lower() for w in words])
+
+
 def to_dash_case(text, detectAcronyms, acronyms):
     words, case, sep = case_parse.parseVariable(text, detectAcronyms, acronyms)
     return '-'.join([w.lower() for w in words])
@@ -122,6 +127,11 @@ class ConvertToPascal(sublime_plugin.TextCommand):
 class ConvertToDot(sublime_plugin.TextCommand):
     def run(self, edit):
         run_on_selections(self.view, edit, to_dot_case)
+
+
+class ConvertToColon(sublime_plugin.TextCommand):
+    def run(self, edit):
+        run_on_selections(self.view, edit, to_colon_case)
 
 
 class ConvertToDash(sublime_plugin.TextCommand):

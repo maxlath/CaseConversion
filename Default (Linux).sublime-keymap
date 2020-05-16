@@ -4,6 +4,7 @@
   { "keys": ["ctrl+k", "ctrl+c"], "command": "convert_to_camel"},
   { "keys": ["ctrl+k", "ctrl+p"], "command": "convert_to_pascal"},
   { "keys": ["ctrl+k", "ctrl+d"], "command": "convert_to_dot"},
+  { "keys": ["ctrl+k", "ctrl+o"], "command": "convert_to_colon"},
   { "keys": ["ctrl+k", "ctrl+h"], "command": "convert_to_dash"},
   { "keys": ["ctrl+k", "ctrl+w"], "command": "convert_to_separate_words"},
   // { "keys": ["ctrl+k", "ctrl+/"], "command": "convert_to_slash"},
